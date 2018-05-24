@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  background-color: grey; 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: BLUE;
+}
+
+.header h2 {
+  text-align: center;
+  color: white;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>WHY ARE MASSLESS PHOTONS AFFECTED BY GRAVITY?</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+  
+  <p>This is a wonderful question… In the first instance, it’s answered by Einstein’s theory of general relativity. (Spoiler alert, light travels along geodesics, which are approximately straight lines in most circumstances that humans encounter in everyday life, but are curved by gravity). It’s also interesting because there is some sense in which light does have “mass” (and therefore should be influenced by gravity… read on!).</p>
+  <p>
+In our everyday experience, light seems to travel in straight lines, unaffected by gravity. Of course, light can bend when it passes through the interface between two media — think of light refracting as is passes from air into water, which is the phenomenon that causes a straw in a glass of water to appear kinked at the interface. But that bending is not gravitational; it’s electromagnetic.</p>
+<p>
+However, light does bend when travelling around massive bodies like neutron stars and black holes. This is explained by Einstein’s theory of general relativity.</p>
+<p>
+We are all familiar with massive objects being influenced by gravity. For instance, think of a planet orbiting the sun. As the planet moves, a centripetal force acts on it, which curves the motion. Without gravity, the planet would travel in a straight line. General relativity puts a different perspective on the situation. Instead of describing the object as moving along a curve in a flat spacetime, the object is described as moving along special “lines” in a curved spacetime. The curves are a consequence of gravitation. The spacetime curves are called geodesics, and they generalise the notion of straight lines to curved spacetime.</p>
+<p>
+Light also travels along geodesics (called null geodesics), and so paths of light are also curved by gravitational force, despite the light not having any mass.</p>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 

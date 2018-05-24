@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  background-color: grey; 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: BLUE;
+}
+
+.header h2 {
+  text-align: center;
+  color: white;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>WHY IS SPEED OF LIGHT SAME IN ALL REFERENCE FRAMES?</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+  
+  <p>The first thing to worry about here is that when you ask someone for a satisfying answer to a "why" question, you have to define what you think would be satisfying. If you ask Euclid why the Pythagorean theorem is true, he'll show you a proof based on his five postulates. But it's also possible to form a logically equivalent system by replacing his parallel postulate with one that asserts the Pythagorean theorem to be true; in this case, we would say that the reason the "parallel theorem" is true is that we can prove it based on the "Pythagorean postulate." Einstein's original 1905 postulates for special relativity went like this: P1 - "The laws by which the states of physical systems undergo change are not affected, whether these changes of state be referred to the one or the other of two systems of co-ordinates in uniform translatory motion." P2 - "Any ray of light moves in the 'stationary' system of co-ordinates with the determined velocity c, whether the ray be emitted by a stationary or by a moving body." From the modern point of view, it was a mistake for Einstein to single out light for special treatment, and we imagine that the mistake was made because in 1905 the electromagnetic field was the only known fundamental field.</p>
+  <p> Really, relativity is about space and time, not light. We could therefore replace P2 with: P2* - "There exists a velocity c such that when something has that velocity, all observers agree on it." And finally, there are completely different systems of axioms that are logically equivalent to Einstein's, and that do not take the frame-independence of c as a postulate (Rindler 1979).</p>
+  <p> For someone who likes axioms P1+P2, the frame-independence of the speed of light is a postulate, so it can't be proved. The reason we pick it as a postulate is that it appears to be true based on observations such as the Michelson-Morley experiment. If we prefer P1+P2* instead, then we actually don't know whether the speed of light is frame-independent. What we do know is that the empirical upper bound on the mass of the photon is extremely small (Lakes 1998), and we can prove that massless particles must move at the universal velocity c.</p><p> In a system such as Rindler's, the existence of a universal velocity c is proved rather than assumed, and the behavior of photons is related empirically to c in the same way as for P1+P2*. We then have a satisfying answer to the "why" question, which is that existence of a universal speed c is a property of spacetime that must exist because spacetime has certain other properties (basically, it has some symmetries, and it doesn't have universal simultaneity).
+</p>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
